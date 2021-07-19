@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+    <link
+      rel="icon"
+      href="https://banner2.cleanpng.com/20180324/otw/kisspng-password-manager-user-computer-icons-password-safe-safe-5ab63a34840cd1.5244173315218918925409.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Generator</h2>
+      <div class="result-container">
+        <span id="result"></span>
+        <button class="btn" id="clipboard">
+          <i style="font-size: 20px" class="fa">&#x2398;</i>
+        </button>
+      </div>
+      <div class="settings">
+        <div class="setting">
+          <label>Password Length</label>
+          <input
+            type="number"
+            id="length"
+            min="4"
+            max="20"
+            value="8"
+            style="
+              color: black;
+              height: 3em;
+              width: 3em;
+              text-align: center;
+              justify-content: center;
+              background-color: white;
+              border: none;
+              font-size: 1rem;
+            "
+          />
+        </div>
+        <div class="setting">
+          <label>Include UPPERCASE LETTERS</label>
+          <input type="checkbox" id="uppercase" checked />
+        </div>
+        <div class="setting">
+          <label>Include lowercase letters</label>
+          <input type="checkbox" id="lowercase" checked />
+        </div>
+        <div class="setting">
+          <label>Include $ymbo!s</label>
+          <input type="checkbox" id="symbols" checked />
+        </div>
+        <div class="setting">
+          <label>Include Numb3rs</label>
+          <input type="checkbox" id="numbers" checked />
+        </div>
+      </div>
+      <button class="btn btn-large" id="generate">Generate Password</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
